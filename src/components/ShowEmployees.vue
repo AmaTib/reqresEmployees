@@ -1,28 +1,18 @@
 <script setup lang="ts">
-import axios from "axios";
-import { onMounted, ref } from "vue";
-import { IEmployeeResponse } from "../models/IEmployeeResponse";
 import { IEmployee } from "../models/IEmployee";
 
-const employees = ref<IEmployee[]>([]);
-
-async function getEmployees(): Promise<IEmployee[]> {
-  const employeeResponse = await axios.get<IEmployeeResponse>(
-    "https://reqres.in/api/users"
-  );
-  return employeeResponse.data.data;
+export interface IEmployeeProps {
+  employees: IEmployee[];
 }
 
-onMounted(async () => {
-  employees.value = await getEmployees();
-});
+defineProps<IEmployeeProps>();
 </script>
 
 <template>
   <section>
     <h1>Anställda</h1>
     <ul>
-      <li v-for="employee in employees">
+      <li v-for="employee in employees" :key="employee.id">
         <img :src="employee.avatar" alt="employee img" />
         <div>
           <h3>{{ employee.first_name }} {{ employee.last_name }}</h3>
@@ -67,6 +57,9 @@ ul {
 img {
   border-radius: 50%;
   height: 6.5em;
+  width: 6.5em;
+
+  border: 10px solid rgb(215, 215, 198);
 }
 
 a,
@@ -79,6 +72,10 @@ p {
   ul {
     justify-content: center;
     gap: 5em;
+  }
+
+  img {
+    border: 15px solid rgb(215, 215, 198);
   }
 }
 </style>

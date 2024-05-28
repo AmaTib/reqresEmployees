@@ -8,13 +8,16 @@ body{
 
   margin: 0 auto;
   
-  background-color: rgb(64, 67, 57);
+  background-color: rgb(58, 67, 57);
   color: rgb(215, 215, 198);
 }
 
 #app {
   min-height: 100vh;
+  margin: 0 0 15% 0;
+
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
