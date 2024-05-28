@@ -45,14 +45,14 @@ ul {
   padding-left: 0;
   gap: 3em;
   width: min-content;
+}
 
-  li {
-    width: 325px;
-    list-style: none;
-    display: flex;
-    justify-content: flex-start;
-    gap: 2em;
-  }
+li {
+  width: 325px;
+  list-style: none;
+  display: flex;
+  justify-content: flex-start;
+  gap: 2em;
 }
 
 img {
