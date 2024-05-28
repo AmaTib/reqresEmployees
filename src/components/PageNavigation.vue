@@ -28,6 +28,7 @@ const emit = defineEmits<{
 section {
   display: flex;
   gap: 1em;
+  margin-bottom: 3em;
 }
 
 button {

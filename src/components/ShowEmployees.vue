@@ -30,7 +30,7 @@ h1 {
 }
 
 section {
-  width: 90%;
+  width: 100vw;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -38,15 +38,16 @@ section {
 }
 
 ul {
-  width: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
   align-items: center;
+  padding-left: 0;
   gap: 3em;
+  width: min-content;
 
   li {
-    width: 315px;
+    width: 325px;
     list-style: none;
     display: flex;
     justify-content: flex-start;
@@ -71,11 +72,8 @@ p {
 @media only screen and (min-width: 600px) {
   ul {
     justify-content: center;
-    gap: 5em;
-  }
-
-  img {
-    border: 15px solid rgb(215, 215, 198);
+    width: 90%;
+    gap: 4em;
   }
 }
 </style>
