@@ -16,8 +16,9 @@ defineProps<IEmployeeProps>();
         <img :src="employee.avatar" alt="employee img" />
         <div>
           <h3>{{ employee.first_name }} {{ employee.last_name }}</h3>
-          <p>Email:</p>
-          <a :href="'mailto:' + employee.email">{{ employee.email }}</a>
+          <a :href="'mailto:' + employee.email"
+            >Maila {{ employee.first_name }}</a
+          >
         </div>
       </li>
     </ul>
