@@ -10,7 +10,7 @@ defineProps<IEmployeeProps>();
 
 <template>
   <section>
-    <h1>Anställda</h1>
+    <h2>Anställda</h2>
     <ul>
       <li v-for="employee in employees" :key="employee.id">
         <img :src="employee.avatar" alt="employee img" />

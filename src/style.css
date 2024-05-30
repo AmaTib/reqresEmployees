@@ -4,15 +4,32 @@ body{
   min-height: 100vh;
   font-family: Arial, Helvetica, sans-serif;
   margin: 0 auto;
-  padding: 0;
+  padding: 6rem 0 0 0; 
   box-sizing: border-box;
-  /* overflow: scroll; */
 
   display: flex;
+  flex-direction: column;
   justify-content: center;
   
   background-color: rgb(58, 67, 57);
   color: rgb(215, 215, 198);
+}
+
+header{
+  position: fixed;
+  top: 0;
+
+  width: 100vw;
+  height: 6em;
+  background: rgb(215, 215, 198);
+  background: linear-gradient(180deg, rgb(215, 215, 198) 55%, rgb(215, 215, 198, 0.7) 70%, rgb(215, 215, 198,0.5) 80%, rgba(255,255,255,0) 90%);
+}
+
+h1{
+  color: rgb(27, 31, 27);
+  font-size: 1.5em;
+  font-family: 'Panchang', sans-serif;
+  margin-left: 0.5em;
 }
 
 #app {
