@@ -10,7 +10,7 @@ defineProps<IEmployeeProps>();
 
 <template>
   <section>
-    <h2>Anställda</h2>
+    <h2>Våra medarbetare</h2>
     <ul>
       <li v-for="employee in employees" :key="employee.id">
         <img :src="employee.avatar" alt="employee img" />
@@ -71,10 +71,18 @@ p {
 }
 
 @media only screen and (min-width: 600px) {
+  section {
+    margin-bottom: 2em;
+  }
+
   ul {
     justify-content: center;
     width: 90%;
     gap: 4em;
+  }
+
+  h2 {
+    margin-bottom: 3em;
   }
 }
 </style>
