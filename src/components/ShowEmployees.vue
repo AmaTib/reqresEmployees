@@ -48,7 +48,7 @@ ul {
 }
 
 li {
-  width: 325px;
+  width: 315px;
   list-style: none;
   display: flex;
   justify-content: flex-start;
@@ -59,6 +59,7 @@ img {
   border-radius: 50%;
   height: 6.5em;
   width: 6.5em;
+  object-fit: cover;
   border: 10px solid rgb(215, 215, 198);
 }
 
