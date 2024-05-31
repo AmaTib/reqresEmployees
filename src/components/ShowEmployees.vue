@@ -31,7 +31,6 @@ h1 {
 }
 
 section {
-  width: 100vw;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -60,7 +59,6 @@ img {
   border-radius: 50%;
   height: 6.5em;
   width: 6.5em;
-
   border: 10px solid rgb(215, 215, 198);
 }
 
