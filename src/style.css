@@ -21,7 +21,6 @@ header{
   width: 100vw;
   height: 6em;
   background: rgb(215, 215, 198);
-  background: linear-gradient(180deg, rgb(215, 215, 198) 55%, rgb(215, 215, 198, 0.7) 70%, rgb(215, 215, 198,0.5) 80%, rgba(255,255,255,0) 90%);
 }
 
 h1{
